@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:cooking_pot"
+    "id": "croptopia:cooking_pot"
     },
     "title": {
       "translate": "advancements.croptopia.pot.title"

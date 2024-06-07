@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:supreme_pizza"
+    "id": "croptopia:supreme_pizza"
     },
     "title": {
       "translate": "advancements.croptopia.gather_food.title"

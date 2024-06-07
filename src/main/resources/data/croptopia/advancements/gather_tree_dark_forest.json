@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:cashew_sapling"
+    "id": "croptopia:cashew_sapling"
     },
     "title": {
       "translate": "advancements.croptopia.gather_tree_dark_forest.title"

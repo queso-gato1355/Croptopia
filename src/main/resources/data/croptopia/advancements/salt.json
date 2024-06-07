@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:salt"
+    "id": "croptopia:salt"
     },
     "title": {
       "translate": "advancements.croptopia.salt.title"

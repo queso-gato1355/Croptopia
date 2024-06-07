@@ -3,7 +3,9 @@
   "ingredient": {
     "tag": "${dependent}:sweetpotatos"
   },
-  "result": "croptopia:baked_sweet_potato",
+  "result": {
+    "id": "croptopia:baked_sweet_potato"
+  },
   "experience": 0.1,
   "cookingtime": 200
 }

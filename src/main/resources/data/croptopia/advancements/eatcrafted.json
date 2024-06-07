@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:tofuburger"
+    "id": "croptopia:tofuburger"
     },
     "title": {
       "translate": "advancements.croptopia.eatcrafted.title"

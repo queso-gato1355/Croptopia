@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:banana_sapling"
+    "id": "croptopia:banana_sapling"
     },
     "title": {
       "translate": "advancements.croptopia.gather_tree_jungle.title"

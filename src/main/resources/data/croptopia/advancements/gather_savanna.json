@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:yam_seed"
+    "id": "croptopia:yam_seed"
     },
     "title": {
       "translate": "advancements.croptopia.gather_savanna.title"

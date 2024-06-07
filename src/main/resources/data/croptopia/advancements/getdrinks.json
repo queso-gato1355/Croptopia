@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:apple_juice"
+    "id": "croptopia:apple_juice"
     },
     "title": {
       "translate": "advancements.croptopia.getdrinks.title"

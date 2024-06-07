@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:lemon_chicken"
+    "id": "croptopia:lemon_chicken"
     },
     "title": {
       "translate": "advancements.croptopia.eatbig.title"

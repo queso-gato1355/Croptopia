@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:cranberry_seed"
+    "id": "croptopia:cranberry_seed"
     },
     "title": {
       "translate": "advancements.croptopia.gather_swamp.title"

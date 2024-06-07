@@ -3,7 +3,9 @@
   "ingredient": {
     "tag": "${dependent}:grapes"
   },
-  "result": "croptopia:raisins",
+  "result": {
+    "id": "croptopia:raisins"
+  },
   "experience": 0.1,
   "cookingtime": 200
 }

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:food_press"
+    "id": "croptopia:food_press"
     },
     "title": {
       "translate": "advancements.croptopia.food_press.title"

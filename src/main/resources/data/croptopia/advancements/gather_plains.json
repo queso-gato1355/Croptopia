@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:broccoli_seed"
+    "id": "croptopia:broccoli_seed"
     },
     "title": {
       "translate": "advancements.croptopia.gather_plains.title"},

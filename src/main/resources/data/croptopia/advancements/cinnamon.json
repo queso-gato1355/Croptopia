@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "croptopia:cinnamon"
+    "id": "croptopia:cinnamon"
     },
     "title": {
       "translate": "advancements.croptopia.cinnamon.title"
