@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:olive"
-            ]
+            "items": "croptopia:olive"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:olive_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

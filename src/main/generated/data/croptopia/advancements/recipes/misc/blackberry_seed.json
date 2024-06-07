@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:blackberry"
-            ]
+            "items": "croptopia:blackberry"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:blackberry_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -46,7 +46,7 @@ public class SeedItem extends ItemNameBlockItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, Level world, List<Component> tooltip, TooltipFlag context) {
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         Component text = Component.translatable("info.croptopia.seed");
         String[] translated = text.getString().split("\n");
         /*if (translated.length >= 2) {

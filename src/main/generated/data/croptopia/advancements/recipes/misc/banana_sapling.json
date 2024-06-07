@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:banana"
-            ]
+            "items": "croptopia:banana"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:banana_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

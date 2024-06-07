@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:turmeric"
-            ]
+            "items": "croptopia:turmeric"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "minecraft:orange_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

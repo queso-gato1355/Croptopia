@@ -43,8 +43,9 @@ public class LeafCropBlock extends CroptopiaCropBlock {
         return Shapes.block();
     }
 
+
     @Override
-    public ItemStack getCloneItemStack(BlockGetter world, BlockPos pos, BlockState state) {
+    public ItemStack getCloneItemStack(LevelReader $$0, BlockPos $$1, BlockState $$2) {
         return new ItemStack(this);
     }
 
@@ -69,10 +70,10 @@ public class LeafCropBlock extends CroptopiaCropBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+    protected InteractionResult useWithoutItem(BlockState state, Level world, BlockPos pos, Player player, BlockHitResult hit) {
         if (CroptopiaMod.getInstance().platform().skipHarvest()) {
             // this is so we just use a forge event. only fabric will proceed beyond this point
-            return super.use(state, world, pos, player, hand, hit);
+            return super.useWithoutItem(state, world, pos, player, hit);
         }
         if (getAge(state) == getMaxAge()) {
             if (player instanceof ServerPlayer) {

@@ -34,7 +34,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "croptopia:pumpkin_bars"
-  },
-  "show_notification": true
+    "id": "croptopia:pumpkin_bars"
+  }
 }

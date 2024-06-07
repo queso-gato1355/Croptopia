@@ -18,7 +18,7 @@
     "3"
   ],
   "result": {
-    "item": "croptopia:sausage"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:sausage"
+  }
 }

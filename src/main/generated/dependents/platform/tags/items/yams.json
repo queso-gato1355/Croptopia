@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "croptopia:yam",
     "#${dependent}:vegetables/yam",

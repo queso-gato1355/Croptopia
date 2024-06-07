@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:apricots"
+            "items": "#${dependent}:apricots"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:apricot_jam"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

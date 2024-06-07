@@ -18,7 +18,7 @@
     "3"
   ],
   "result": {
-    "item": "croptopia:steamed_crab"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:steamed_crab"
+  }
 }

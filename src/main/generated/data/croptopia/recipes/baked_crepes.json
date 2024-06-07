@@ -27,7 +27,7 @@
     " 7 "
   ],
   "result": {
-    "item": "croptopia:baked_crepes"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:baked_crepes"
+  }
 }

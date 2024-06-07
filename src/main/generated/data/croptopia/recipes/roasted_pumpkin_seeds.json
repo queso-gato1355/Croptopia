@@ -20,7 +20,7 @@
     " 4 "
   ],
   "result": {
-    "item": "croptopia:roasted_pumpkin_seeds"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:roasted_pumpkin_seeds"
+  }
 }

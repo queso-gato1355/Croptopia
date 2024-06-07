@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:cantaloupe"
-            ]
+            "items": "croptopia:cantaloupe"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:cantaloupe_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

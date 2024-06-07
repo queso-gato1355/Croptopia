@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:cashew"
-            ]
+            "items": "croptopia:cashew"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:cashew_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

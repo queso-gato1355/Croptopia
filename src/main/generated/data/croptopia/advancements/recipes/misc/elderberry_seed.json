@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:elderberry"
-            ]
+            "items": "croptopia:elderberry"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:elderberry_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

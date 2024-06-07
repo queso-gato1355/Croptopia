@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:cranberries"
+            "items": "#${dependent}:cranberries"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:cranberry_juice"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

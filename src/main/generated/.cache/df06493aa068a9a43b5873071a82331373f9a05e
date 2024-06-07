@@ -1,11 +1,11 @@
-// 1.20.2	2023-12-08T22:08:51.1291018	Croptopia/Tags for minecraft:block
-b0d67759d995b4f2fc21c2834735035ad01b6453 data\minecraft\tags\blocks\logs_that_burn.json
-6cae94d3e234e5ae78cfe1378a556e9bf98d664f data\minecraft\tags\blocks\saplings.json
-7e13ef6b91d35e44ce7c67b3f7e6e401157f6c6b data\minecraft\tags\blocks\azalea_root_replaceable.json
-7e13ef6b91d35e44ce7c67b3f7e6e401157f6c6b data\minecraft\tags\blocks\mineable\shovel.json
-773b60b5e45a6c48e204fbb4222c2a060fb6ea8a data\minecraft\tags\blocks\leaves.json
-b0d88ccb3fc967b8e0100f4cfb0335c980a6a138 data\minecraft\tags\blocks\crops.json
-9f2cd9aafd1a469fb7003fdb7e6883521e3ea563 data\croptopia\tags\blocks\cinnamon_logs.json
-7e13ef6b91d35e44ce7c67b3f7e6e401157f6c6b data\minecraft\tags\blocks\enderman_holdable.json
-773b60b5e45a6c48e204fbb4222c2a060fb6ea8a data\minecraft\tags\blocks\mineable\hoe.json
-7e13ef6b91d35e44ce7c67b3f7e6e401157f6c6b data\minecraft\tags\blocks\dripstone_replaceable_blocks.json
+// 1.20.6	2024-06-07T16:04:06.6833156	Croptopia/Tags for minecraft:block
+c94d6f79ce59608453ea70f72ef154084a5b9b13 data\minecraft\tags\blocks\logs_that_burn.json
+c9c457d7127a94df94f45ae2591496e3cb9ad793 data\minecraft\tags\blocks\saplings.json
+e5e7c17efaeaaa402c4705dadc0aad43e10b6ccf data\minecraft\tags\blocks\azalea_root_replaceable.json
+e5e7c17efaeaaa402c4705dadc0aad43e10b6ccf data\minecraft\tags\blocks\mineable\shovel.json
+55d09a8b14c1f78b2f625f4322cd9b5ca89c8974 data\minecraft\tags\blocks\leaves.json
+b3b2aae62189d982ae690c9cbeeb972c6eca35df data\minecraft\tags\blocks\crops.json
+e5e7c17efaeaaa402c4705dadc0aad43e10b6ccf data\minecraft\tags\blocks\enderman_holdable.json
+e1869b0a6def5b71118a163d67616deb2661391d data\croptopia\tags\blocks\cinnamon_logs.json
+55d09a8b14c1f78b2f625f4322cd9b5ca89c8974 data\minecraft\tags\blocks\mineable\hoe.json
+e5e7c17efaeaaa402c4705dadc0aad43e10b6ccf data\minecraft\tags\blocks\dripstone_replaceable_blocks.json

@@ -37,7 +37,6 @@
   ],
   "result": {
     "count": 2,
-    "item": "croptopia:borscht"
-  },
-  "show_notification": true
+    "id": "croptopia:borscht"
+  }
 }

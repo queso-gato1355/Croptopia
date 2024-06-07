@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:pecans"
+            "items": "#${dependent}:pecans"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:pecan_pie"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

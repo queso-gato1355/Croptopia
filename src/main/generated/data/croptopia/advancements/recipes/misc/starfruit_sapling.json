@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:starfruit"
-            ]
+            "items": "croptopia:starfruit"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:starfruit_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

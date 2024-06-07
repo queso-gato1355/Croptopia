@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:tea_leaves"
-            ]
+            "items": "croptopia:tea_leaves"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:tea_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

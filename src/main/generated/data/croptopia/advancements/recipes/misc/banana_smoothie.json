@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:bananas"
+            "items": "#${dependent}:bananas"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:banana_smoothie"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

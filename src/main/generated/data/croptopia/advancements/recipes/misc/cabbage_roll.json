@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:cabbage"
-            ]
+            "items": "croptopia:cabbage"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:cabbage_roll"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

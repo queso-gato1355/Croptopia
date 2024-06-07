@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:peach"
-            ]
+            "items": "croptopia:peach"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:peach_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

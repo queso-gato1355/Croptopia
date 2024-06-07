@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:strawberries"
+            "items": "#${dependent}:strawberries"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:strawberry_smoothie"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

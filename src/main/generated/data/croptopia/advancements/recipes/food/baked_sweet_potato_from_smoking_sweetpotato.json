@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:sweetpotato"
-            ]
+            "items": "croptopia:sweetpotato"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "minecraft:baked_sweet_potato_from_smoking_sweetpotato"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

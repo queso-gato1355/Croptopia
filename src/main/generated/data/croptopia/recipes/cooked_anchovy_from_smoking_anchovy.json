@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "croptopia:anchovy"
   },
-  "result": "croptopia:cooked_anchovy"
+  "result": {
+    "id": "croptopia:cooked_anchovy"
+  }
 }

@@ -27,7 +27,7 @@
     "435"
   ],
   "result": {
-    "item": "croptopia:croque_monsieur"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:croque_monsieur"
+  }
 }

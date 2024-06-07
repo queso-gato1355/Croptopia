@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:grape"
-            ]
+            "items": "croptopia:grape"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "minecraft:purple_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

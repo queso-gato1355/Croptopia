@@ -27,7 +27,7 @@
     "5 6"
   ],
   "result": {
-    "item": "croptopia:quiche"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:quiche"
+  }
 }

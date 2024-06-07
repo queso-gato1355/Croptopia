@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "croptopia:greenonion_seed",
     "#${dependent}:seeds/greenonion"

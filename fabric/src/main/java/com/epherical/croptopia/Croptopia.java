@@ -6,19 +6,13 @@ import com.epherical.croptopia.dependencies.Patchouli;
 import com.epherical.croptopia.generator.BiomeModifiers;
 import com.epherical.croptopia.items.CropLootTableModifier;
 import com.epherical.croptopia.items.GuideBookItem;
-import com.epherical.croptopia.items.SeedItem;
-import com.epherical.croptopia.mixin.accessor.ChickenAccess;
-import com.epherical.croptopia.mixin.accessor.ParrotAccess;
 import com.epherical.croptopia.register.Content;
 import com.epherical.croptopia.register.helpers.FarmlandCrop;
 import com.epherical.croptopia.register.helpers.Tree;
 import com.epherical.croptopia.register.helpers.TreeCrop;
 import com.epherical.croptopia.register.helpers.Utensil;
-import com.epherical.croptopia.register.Composter;
 import com.epherical.epherolib.libs.org.spongepowered.configurate.hocon.HoconConfigurationLoader;
-import com.google.common.collect.Sets;
 import com.mojang.logging.LogUtils;
-import it.unimi.dsi.fastutil.ints.IntList;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -27,6 +21,7 @@ import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.fabricmc.fabric.api.registry.VillagerInteractionRegistries;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -35,15 +30,10 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
 import org.slf4j.Logger;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.function.Supplier;
 
 import static com.epherical.croptopia.CroptopiaMod.createGroup;
 import static com.epherical.croptopia.common.MiscNames.MOD_ID;
@@ -127,8 +117,6 @@ public class Croptopia implements ModInitializer {
 
         //CroptopiaVillagerTrades.init();
         modifyAxeBlockStripping();
-        modifyChickenBreeds();
-        modifyParrotBreeds();
         modifyVillagers();
     }
 
@@ -143,24 +131,7 @@ public class Croptopia implements ModInitializer {
         }
     }
 
-    private void modifyChickenBreeds() {
-        IntList stacks = ChickenAccess.getFoodItems().getStackingIds();
-        List<Item> baseItems = new ArrayList<>();
 
-        for (Integer stack : stacks) {
-            baseItems.add(Item.byId(stack));
-        }
-        // TODO iterate over farmland
-        baseItems.addAll(CroptopiaMod.seeds);
-        ChickenAccess.setFoodItems(Ingredient.of(baseItems.toArray(new Item[0])));
-    }
-
-    private void modifyParrotBreeds() {
-        Set<Item> baseItems = ParrotAccess.getTamingIngredients();
-        Set<Item> newItems = Sets.newHashSet(baseItems);
-        newItems.addAll(CroptopiaMod.seeds);
-        ParrotAccess.setTamingIngredients(newItems);
-    }
 
     private void modifyVillagers() {
         // Allow villagers to compost croptopia seeds.
@@ -168,9 +139,9 @@ public class Croptopia implements ModInitializer {
             VillagerInteractionRegistries.registerCompostable(seed);
         }
         // Allow villagers to consume(?) harvested croptopia foods.
-        Content.createCropStream().filter(item -> item.getFoodProperties() != null)
+        Content.createCropStream().filter(item -> item.components().has(DataComponents.FOOD))
                 .forEach(item -> {
-                    VillagerInteractionRegistries.registerFood(item, item.getFoodProperties().getNutrition());
+                    VillagerInteractionRegistries.registerFood(item, item.components().get(DataComponents.FOOD).nutrition());
                     VillagerInteractionRegistries.registerCollectable(item);
                 });
         // this is the "wanted" items for villagers.

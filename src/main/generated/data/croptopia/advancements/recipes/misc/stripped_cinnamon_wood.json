@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:stripped_cinnamon_log"
-            ]
+            "items": "croptopia:stripped_cinnamon_log"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:stripped_cinnamon_wood"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

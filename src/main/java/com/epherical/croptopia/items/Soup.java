@@ -1,5 +1,6 @@
 package com.epherical.croptopia.items;
 
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BowlFoodItem;
@@ -18,7 +19,7 @@ public class Soup extends BowlFoodItem {
         Player playerEntity = user instanceof Player ? (Player)user : null;
         if (playerEntity != null) {
             if (!playerEntity.getAbilities().instabuild) {
-                if (isEdible()) {
+                if (stack.has(DataComponents.FOOD)) {
                     user.eat(world, stack);
                 }
             }

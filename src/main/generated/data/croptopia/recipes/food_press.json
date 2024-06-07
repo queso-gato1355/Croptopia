@@ -15,7 +15,7 @@
     "I"
   ],
   "result": {
-    "item": "croptopia:food_press"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:food_press"
+  }
 }

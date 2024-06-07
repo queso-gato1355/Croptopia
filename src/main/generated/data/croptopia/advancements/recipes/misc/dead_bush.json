@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:salts"
+            "items": "#${dependent}:salts"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:dead_bush"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

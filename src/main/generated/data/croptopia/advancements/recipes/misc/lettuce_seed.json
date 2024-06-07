@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:lettuce"
-            ]
+            "items": "croptopia:lettuce"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:lettuce_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

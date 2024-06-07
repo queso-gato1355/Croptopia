@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "croptopia:celery",
     "#${dependent}:vegetables/celery",

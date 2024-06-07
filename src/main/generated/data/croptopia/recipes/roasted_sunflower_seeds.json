@@ -20,7 +20,7 @@
     " 4 "
   ],
   "result": {
-    "item": "croptopia:roasted_sunflower_seeds"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:roasted_sunflower_seeds"
+  }
 }

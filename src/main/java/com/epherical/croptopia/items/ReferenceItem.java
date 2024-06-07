@@ -18,7 +18,7 @@ public class ReferenceItem extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack item, Level level, List<Component> tooltip, TooltipFlag flag) {
+    public void appendHoverText(ItemStack item, TooltipContext level, List<Component> tooltip, TooltipFlag flag) {
         super.appendHoverText(item, level, tooltip, flag);
         tooltip.add(component);
     }

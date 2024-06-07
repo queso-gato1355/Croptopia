@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:saguaro"
-            ]
+            "items": "croptopia:saguaro"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:saguaro_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

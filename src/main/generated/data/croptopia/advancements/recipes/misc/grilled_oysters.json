@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:grilled_oysters"
-            ]
+            "items": "croptopia:grilled_oysters"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:grilled_oysters"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

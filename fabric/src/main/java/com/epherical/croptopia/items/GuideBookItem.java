@@ -26,11 +26,10 @@ public class GuideBookItem extends Item {
 
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag context) {
+    public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> list, TooltipFlag tooltipFlag) {
         if (!Croptopia.patchouli.isLoaded()) {
-            tooltip.add(Component.nullToEmpty("Patchouli is not installed."));
+            list.add(Component.nullToEmpty("Patchouli is not installed."));
         }
-
     }
 
     @Override

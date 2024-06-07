@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:milk_bucket"
-            ]
+            "items": "minecraft:milk_bucket"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:mashed_potatoes"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

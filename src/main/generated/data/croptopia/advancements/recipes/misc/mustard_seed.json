@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:mustard"
-            ]
+            "items": "croptopia:mustard"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:mustard_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

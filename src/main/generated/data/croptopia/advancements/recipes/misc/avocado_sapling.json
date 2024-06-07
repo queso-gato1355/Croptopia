@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:avocado"
-            ]
+            "items": "croptopia:avocado"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:avocado_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:currant"
-            ]
+            "items": "croptopia:currant"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:currant_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

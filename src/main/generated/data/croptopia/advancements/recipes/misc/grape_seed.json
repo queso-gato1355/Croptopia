@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:grape"
-            ]
+            "items": "croptopia:grape"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:grape_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

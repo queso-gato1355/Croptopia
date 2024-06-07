@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:celery"
-            ]
+            "items": "croptopia:celery"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:celery_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

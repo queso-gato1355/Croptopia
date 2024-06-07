@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:frying_pan"
-            ]
+            "items": "croptopia:frying_pan"
           }
         ]
       },
@@ -23,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:flour"
+            "items": "#${dependent}:flour"
           }
         ]
       },
@@ -41,6 +39,5 @@
     "recipes": [
       "croptopia:sweet_crepes"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

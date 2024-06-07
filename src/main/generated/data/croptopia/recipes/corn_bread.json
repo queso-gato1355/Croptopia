@@ -10,7 +10,7 @@
     "111"
   ],
   "result": {
-    "item": "croptopia:corn_bread"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:corn_bread"
+  }
 }

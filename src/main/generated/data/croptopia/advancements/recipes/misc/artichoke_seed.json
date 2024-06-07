@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:artichoke"
-            ]
+            "items": "croptopia:artichoke"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:artichoke_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

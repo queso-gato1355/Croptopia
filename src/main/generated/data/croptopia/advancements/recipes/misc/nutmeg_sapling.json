@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:nutmeg"
-            ]
+            "items": "croptopia:nutmeg"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:nutmeg_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

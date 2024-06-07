@@ -21,7 +21,7 @@
     "3 "
   ],
   "result": {
-    "item": "croptopia:mashed_potatoes"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:mashed_potatoes"
+  }
 }

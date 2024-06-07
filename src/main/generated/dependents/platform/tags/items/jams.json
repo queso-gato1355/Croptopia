@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "#${dependent}:apricot_jams",
     "#${dependent}:blackberry_jams",

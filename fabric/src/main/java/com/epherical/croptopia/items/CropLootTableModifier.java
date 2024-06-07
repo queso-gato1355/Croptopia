@@ -6,11 +6,14 @@ import com.epherical.croptopia.register.Content;
 import com.google.common.collect.ImmutableList;
 import net.fabricmc.fabric.api.loot.v2.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.entries.LootTableReference;
+import net.minecraft.world.level.storage.loot.entries.NestedLootTable;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
@@ -24,7 +27,8 @@ public class CropLootTableModifier {
     private static final Logger LOGGER = LoggerFactory.getLogger(CropLootTableModifier.class);
 
     public static void init() {
-        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source) -> {
+            ResourceLocation id = key.location();
             if (id.getNamespace().equalsIgnoreCase("minecraft")) {
                 String path = id.getPath();
                 switch (path) {
@@ -34,14 +38,16 @@ public class CropLootTableModifier {
                         tableBuilder.withPool(builder);
                     }
                     case "gameplay/fishing" -> {
-                        List<LootPool> pools = ((LootTableBuilderAccessor) tableBuilder).getPools();
+                        ImmutableList.Builder<LootPool> pools1 = ((LootTableBuilderAccessor) tableBuilder).getPools();
+                        List<LootPool> pools = ((LootTableBuilderAccessor) tableBuilder).getPools().build();
                         if (pools.isEmpty()) {
                             LOGGER.warn("Can not inject into gameplay/fishing/fish as it is empty");
                         } else {
                             LootPool.Builder builder = FabricLootPoolBuilder.copyOf(pools.get(0));
-                            builder.add(LootTableReference.lootTableReference(new ResourceLocation("croptopia", "gameplay/fishing/fish"))
+                            ResourceKey<LootTable> croptopia = ResourceKey.create(Registries.LOOT_TABLE, new ResourceLocation("croptopia", "gameplay/fishing/fish"));
+                            builder.add(NestedLootTable.lootTableReference(croptopia)
                                     .setWeight(30));
-                            pools.set(0, builder.build());
+                            pools1.add(builder.build());
                         }
                     }
                     case "entities/squid" -> {

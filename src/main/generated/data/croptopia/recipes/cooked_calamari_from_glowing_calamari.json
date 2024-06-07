@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "croptopia:glowing_calamari"
   },
-  "result": "croptopia:cooked_calamari"
+  "result": {
+    "id": "croptopia:cooked_calamari"
+  }
 }

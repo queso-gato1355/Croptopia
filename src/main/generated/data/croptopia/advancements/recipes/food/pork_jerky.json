@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:salt"
-            ]
+            "items": "croptopia:salt"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:pork_jerky"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

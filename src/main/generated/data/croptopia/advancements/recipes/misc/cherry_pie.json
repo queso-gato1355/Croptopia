@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:cherries"
+            "items": "#${dependent}:cherries"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:cherry_pie"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

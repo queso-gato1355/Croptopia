@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:grapefruit"
-            ]
+            "items": "croptopia:grapefruit"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:grapefruit_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

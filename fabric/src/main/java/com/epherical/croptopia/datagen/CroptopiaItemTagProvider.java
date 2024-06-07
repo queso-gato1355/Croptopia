@@ -1,24 +1,15 @@
 package com.epherical.croptopia.datagen;
 
 import com.epherical.croptopia.CroptopiaMod;
-import com.epherical.croptopia.items.SeedItem;
 import com.epherical.croptopia.register.Content;
 import com.epherical.croptopia.register.helpers.Tree;
 import com.epherical.croptopia.register.helpers.TreeCrop;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.data.PackOutput;
-import net.minecraft.data.tags.IntrinsicHolderTagsProvider;
-import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.data.tags.TagsProvider;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -35,7 +26,17 @@ public class CroptopiaItemTagProvider extends FabricTagProvider.ItemTagProvider 
         // currently, only generates air, but leaves item tag isn't used by vanilla anyway
         // generateLeaves();
         generateMisc();
+        generateSeedsEatenByTag(ItemTags.CHICKEN_FOOD);
+        generateSeedsEatenByTag(ItemTags.PARROT_FOOD);
     }
+
+    protected void generateSeedsEatenByTag(TagKey<Item> key) {
+        FabricTagBuilder animalFood = getOrCreateTagBuilder(key);
+        for (Item seed : CroptopiaMod.seeds) {
+            animalFood.add(seed);
+        }
+    }
+
 
     protected void generateSaplings() {
         FabricTagBuilder saplings = getOrCreateTagBuilder(ItemTags.SAPLINGS);

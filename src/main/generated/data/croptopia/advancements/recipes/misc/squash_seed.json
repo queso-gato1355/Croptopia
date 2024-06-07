@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:squash"
-            ]
+            "items": "croptopia:squash"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:squash_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

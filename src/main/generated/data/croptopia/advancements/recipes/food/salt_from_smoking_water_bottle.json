@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:water_bottle"
-            ]
+            "items": "croptopia:water_bottle"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "minecraft:salt_from_smoking_water_bottle"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

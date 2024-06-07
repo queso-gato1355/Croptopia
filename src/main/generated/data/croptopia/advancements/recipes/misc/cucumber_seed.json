@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:cucumber"
-            ]
+            "items": "croptopia:cucumber"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:cucumber_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

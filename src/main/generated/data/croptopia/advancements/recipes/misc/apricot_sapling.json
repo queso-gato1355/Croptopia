@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:apricot"
-            ]
+            "items": "croptopia:apricot"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:apricot_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

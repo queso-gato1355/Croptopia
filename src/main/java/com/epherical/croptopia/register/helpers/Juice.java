@@ -50,7 +50,7 @@ public class Juice implements ItemLike {
 
     public void registerItem(RegisterFunction<Item> register) {
         this.item = register.register(CroptopiaMod.createIdentifier(name), () ->
-                new Drink(createGroup().food(createBuilder(JUICE_5).alwaysEat().build()).craftRemainder(Items.GLASS_BOTTLE)));
+                new Drink(createGroup().food(createBuilder(JUICE_5).alwaysEdible().build()).craftRemainder(Items.GLASS_BOTTLE)));
     }
 
     public static List<Juice> copy() {

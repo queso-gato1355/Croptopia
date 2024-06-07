@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:bellpepper"
-            ]
+            "items": "croptopia:bellpepper"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:bellpepper_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

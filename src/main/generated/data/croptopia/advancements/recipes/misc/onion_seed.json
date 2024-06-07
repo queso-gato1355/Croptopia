@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:onion"
-            ]
+            "items": "croptopia:onion"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:onion_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

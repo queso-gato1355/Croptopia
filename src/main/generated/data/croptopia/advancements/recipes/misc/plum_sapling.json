@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:plum"
-            ]
+            "items": "croptopia:plum"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:plum_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

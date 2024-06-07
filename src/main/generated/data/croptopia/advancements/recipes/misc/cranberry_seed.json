@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:cranberry"
-            ]
+            "items": "croptopia:cranberry"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:cranberry_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

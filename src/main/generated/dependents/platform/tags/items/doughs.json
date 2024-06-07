@@ -1,10 +1,5 @@
 {
-  "replace": false,
   "values": [
-    "croptopia:dough",
-    {
-      "required": false,
-      "id": "#${dependent}:dough"
-    }
+    "croptopia:dough"
   ]
 }

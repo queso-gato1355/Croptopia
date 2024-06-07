@@ -14,7 +14,7 @@
     "i "
   ],
   "result": {
-    "item": "croptopia:knife"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:knife"
+  }
 }

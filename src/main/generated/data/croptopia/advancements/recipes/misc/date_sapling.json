@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:date"
-            ]
+            "items": "croptopia:date"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:date_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "minecraft:apple",
     "#${dependent}:fruits/apple",

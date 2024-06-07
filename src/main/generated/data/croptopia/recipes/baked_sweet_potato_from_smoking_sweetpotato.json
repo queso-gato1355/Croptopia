@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "croptopia:sweetpotato"
   },
-  "result": "croptopia:baked_sweet_potato"
+  "result": {
+    "id": "croptopia:baked_sweet_potato"
+  }
 }

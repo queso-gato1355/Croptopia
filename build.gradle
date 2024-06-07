@@ -19,8 +19,8 @@ allprojects {
 }
 
 subprojects {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 
     repositories {
         mavenCentral()
@@ -39,7 +39,7 @@ minecraft {
 dependencies {
     compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
     compileOnlyApi('org.jetbrains:annotations:23.0.0')
-    compileOnlyApi('com.epherical.epherolib:EpheroLib:1.2.0-1.20.1')
+    compileOnlyApi('com.epherical.epherolib:EpheroLib:1.2.0-1.20.6')
 }
 
 sourceSets {

@@ -30,7 +30,7 @@
     "435"
   ],
   "result": {
-    "item": "croptopia:croque_madame"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:croque_madame"
+  }
 }

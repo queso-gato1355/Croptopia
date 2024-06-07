@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "#${dependent}:apple_juices",
     "#${dependent}:cranberry_juices",

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:glowing_calamari"
-            ]
+            "items": "croptopia:glowing_calamari"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "minecraft:cooked_calamari_from_smoking_glowing_calamari"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

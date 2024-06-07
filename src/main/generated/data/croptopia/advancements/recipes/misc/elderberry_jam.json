@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:elderberries"
+            "items": "#${dependent}:elderberries"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:elderberry_jam"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -11,9 +11,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:tomatillo"
-            ]
+            "items": "croptopia:tomatillo"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:tomatillo_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

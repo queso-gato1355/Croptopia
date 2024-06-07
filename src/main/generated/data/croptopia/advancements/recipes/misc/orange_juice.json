@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:oranges"
+            "items": "#${dependent}:oranges"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:orange_juice"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

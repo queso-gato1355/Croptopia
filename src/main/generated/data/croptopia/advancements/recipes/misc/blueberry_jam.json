@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:blueberries"
+            "items": "#${dependent}:blueberries"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:blueberry_jam"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

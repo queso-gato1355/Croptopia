@@ -24,7 +24,7 @@
     " 6 "
   ],
   "result": {
-    "item": "croptopia:beetroot_salad"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:beetroot_salad"
+  }
 }

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:mango"
-            ]
+            "items": "croptopia:mango"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:mango_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

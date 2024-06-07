@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "#${dependent}:saplings/almond",
     "#${dependent}:saplings/apple",

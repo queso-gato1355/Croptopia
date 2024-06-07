@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:rice"
-            ]
+            "items": "croptopia:rice"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:rice_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

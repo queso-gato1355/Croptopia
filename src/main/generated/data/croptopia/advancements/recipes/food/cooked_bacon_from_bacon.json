@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:bacon"
-            ]
+            "items": "croptopia:bacon"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "minecraft:cooked_bacon_from_bacon"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

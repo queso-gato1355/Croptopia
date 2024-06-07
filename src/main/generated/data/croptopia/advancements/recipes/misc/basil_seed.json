@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:basil"
-            ]
+            "items": "croptopia:basil"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:basil_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

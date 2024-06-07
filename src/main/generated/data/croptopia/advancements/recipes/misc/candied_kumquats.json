@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:kumquat"
-            ]
+            "items": "croptopia:kumquat"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:candied_kumquats"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

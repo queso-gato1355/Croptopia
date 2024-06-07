@@ -44,7 +44,7 @@ public class Jam implements ItemLike {
 
     public void registerItem(RegisterFunction<Item> register) {
         item = register.register(CroptopiaMod.createIdentifier(name), () ->
-                new Drink(createGroup().craftRemainder(Items.GLASS_BOTTLE).food(createBuilder(JAM_3).alwaysEat().build())));
+                new Drink(createGroup().craftRemainder(Items.GLASS_BOTTLE).food(createBuilder(JAM_3).alwaysEdible().build())));
     }
 
     public static List<Jam> copy() {

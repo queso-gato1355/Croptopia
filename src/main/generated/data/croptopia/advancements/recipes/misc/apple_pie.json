@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:apples"
+            "items": "#${dependent}:apples"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:apple_pie"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

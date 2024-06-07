@@ -2,6 +2,7 @@ package com.epherical.croptopia.items;
 
 import com.epherical.croptopia.CroptopiaMod;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.stats.Stats;
@@ -41,7 +42,7 @@ public class Drink extends Item {
         if (playerEntity != null) {
             playerEntity.awardStat(Stats.ITEM_USED.get(this));
             if (!playerEntity.getAbilities().instabuild) {
-                if (isEdible()) {
+                if (stack.has(DataComponents.FOOD)) {
                     CroptopiaMod.getInstance().platform().invokeDrinkEvent(stack, playerEntity);
                     user.eat(world, stack);
                 }

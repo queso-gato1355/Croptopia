@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "minecraft:bread"
   },
-  "result": "croptopia:toast"
+  "result": {
+    "id": "croptopia:toast"
+  }
 }

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:leek"
-            ]
+            "items": "croptopia:leek"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:leek_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,7 +30,7 @@
     " 45"
   ],
   "result": {
-    "item": "croptopia:the_big_breakfast"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "croptopia:the_big_breakfast"
+  }
 }

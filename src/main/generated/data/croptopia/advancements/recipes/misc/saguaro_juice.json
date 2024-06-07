@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:saguaros"
+            "items": "#${dependent}:saguaros"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:saguaro_juice"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

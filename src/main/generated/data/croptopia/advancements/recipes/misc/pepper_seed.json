@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:pepper"
-            ]
+            "items": "croptopia:pepper"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:pepper_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

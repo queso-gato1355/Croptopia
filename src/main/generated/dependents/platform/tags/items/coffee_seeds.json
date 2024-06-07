@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "croptopia:coffee_seed",
     "#${dependent}:seeds/coffee_beans"

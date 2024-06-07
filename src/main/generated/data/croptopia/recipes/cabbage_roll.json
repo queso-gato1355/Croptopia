@@ -28,7 +28,6 @@
   ],
   "result": {
     "count": 2,
-    "item": "croptopia:cabbage_roll"
-  },
-  "show_notification": true
+    "id": "croptopia:cabbage_roll"
+  }
 }

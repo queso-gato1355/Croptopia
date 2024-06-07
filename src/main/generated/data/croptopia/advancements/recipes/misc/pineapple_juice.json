@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:pineapples"
+            "items": "#${dependent}:pineapples"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:pineapple_juice"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

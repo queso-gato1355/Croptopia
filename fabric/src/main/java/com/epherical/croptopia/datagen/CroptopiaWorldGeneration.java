@@ -28,24 +28,20 @@ public class CroptopiaWorldGeneration extends FabricDynamicRegistryProvider {
         HolderLookup.RegistryLookup<PlacedFeature> placed = registries.lookupOrThrow(Registries.PLACED_FEATURE);
         for (TreeCrop treeCrop : TreeCrop.TREE_CROPS) {
             addConfiguredFeature(treeCrop.getConfiguredFeatureKey(), treeCrop.getTreeConfig(), entries);
-            Holder.Reference<ConfiguredFeature<?, ?>> standAlone = Holder.Reference.createStandAlone(lookup, treeCrop.getConfiguredFeatureKey());
-            entries.add(treeCrop.getPlacedFeatureKey(), new PlacedFeature(standAlone, WorldGenFeatures.datagenModifierLists.get(treeCrop.getPlacedFeatureKey())));
+            entries.add(treeCrop.getPlacedFeatureKey(), new PlacedFeature(lookup.getOrThrow(treeCrop.getConfiguredFeatureKey()), WorldGenFeatures.datagenModifierLists.get(treeCrop.getPlacedFeatureKey())));
         }
 
         for (Tree tree : Tree.copy()) {
             addConfiguredFeature(tree.getConfiguredFeatureKey(), tree.getTreeGen(), entries);
-            Holder.Reference<ConfiguredFeature<?, ?>> standAlone = Holder.Reference.createStandAlone(lookup, tree.getConfiguredFeatureKey());
-            entries.add(tree.getPlacedFeatureKey(), new PlacedFeature(standAlone, WorldGenFeatures.datagenModifierLists.get(tree.getPlacedFeatureKey())));
+            entries.add(tree.getPlacedFeatureKey(), new PlacedFeature(lookup.getOrThrow(tree.getConfiguredFeatureKey()), WorldGenFeatures.datagenModifierLists.get(tree.getPlacedFeatureKey())));
         }
 
         addConfiguredFeature(ConfiguredFeatureKeys.DISK_SALT_KEY, WorldGenFeatures.DISK_SALT, entries);
-        Holder.Reference<ConfiguredFeature<?, ?>> salt = Holder.Reference.createStandAlone(lookup, ConfiguredFeatureKeys.DISK_SALT_KEY);
-        entries.add(PlacedFeatureKeys.DISK_SALT_PLACED_KEY, new PlacedFeature(salt, WorldGenFeatures.datagenModifierLists.get(PlacedFeatureKeys.DISK_SALT_PLACED_KEY)));
+        entries.add(PlacedFeatureKeys.DISK_SALT_PLACED_KEY, new PlacedFeature(lookup.getOrThrow(ConfiguredFeatureKeys.DISK_SALT_KEY), WorldGenFeatures.datagenModifierLists.get(PlacedFeatureKeys.DISK_SALT_PLACED_KEY)));
 
 
         addConfiguredFeature(ConfiguredFeatureKeys.RANDOM_CROP_KEY, WorldGenFeatures.RANDOM_CROP, entries);
-        Holder.Reference<ConfiguredFeature<?, ?>> cropDisk = Holder.Reference.createStandAlone(lookup, ConfiguredFeatureKeys.RANDOM_CROP_KEY);
-        entries.add(PlacedFeatureKeys.RANDOM_CROP_KEY, new PlacedFeature(cropDisk, WorldGenFeatures.datagenModifierLists.get(PlacedFeatureKeys.RANDOM_CROP_KEY)));
+        entries.add(PlacedFeatureKeys.RANDOM_CROP_KEY, new PlacedFeature(lookup.getOrThrow(ConfiguredFeatureKeys.RANDOM_CROP_KEY), WorldGenFeatures.datagenModifierLists.get(PlacedFeatureKeys.RANDOM_CROP_KEY)));
     }
 
     @Override
@@ -57,6 +53,5 @@ public class CroptopiaWorldGeneration extends FabricDynamicRegistryProvider {
     private Holder<ConfiguredFeature<?, ?>> addConfiguredFeature(ResourceKey<ConfiguredFeature<?, ?>> key, ConfiguredFeature<?, ?> config, Entries entries) {
         return entries.add(key, config);
     }
-
 
 }

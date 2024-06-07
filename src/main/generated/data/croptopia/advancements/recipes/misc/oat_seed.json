@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:oat"
-            ]
+            "items": "croptopia:oat"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:oat_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

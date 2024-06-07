@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "croptopia:tuna"
   },
-  "result": "croptopia:cooked_tuna"
+  "result": {
+    "id": "croptopia:cooked_tuna"
+  }
 }

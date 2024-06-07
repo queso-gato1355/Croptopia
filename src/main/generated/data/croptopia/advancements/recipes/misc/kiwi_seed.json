@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:kiwi"
-            ]
+            "items": "croptopia:kiwi"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:kiwi_seed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -6,11 +6,9 @@
   "refmap": "Croptopia-refmap.json",
   "mixins": [
     "AxeMixin",
-    "accessor.ChickenAccess",
     "FarmerWorkTaskMixin",
     "ItemMixin",
     "accessor.LootTableBuilderAccessor",
-    "accessor.ParrotAccess",
     "datagen.IdentifierAccessor",
     "datagen.ObjectBuilderAccessor",
     "datagen.PathProviderAccessor",

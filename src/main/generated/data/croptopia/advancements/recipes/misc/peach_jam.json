@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:peaches"
+            "items": "#${dependent}:peaches"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:peach_jam"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

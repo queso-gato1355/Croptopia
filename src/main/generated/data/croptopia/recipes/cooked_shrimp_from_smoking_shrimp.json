@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "croptopia:shrimp"
   },
-  "result": "croptopia:cooked_shrimp"
+  "result": {
+    "id": "croptopia:cooked_shrimp"
+  }
 }

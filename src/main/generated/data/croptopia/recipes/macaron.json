@@ -21,7 +21,6 @@
   ],
   "result": {
     "count": 2,
-    "item": "croptopia:macaron"
-  },
-  "show_notification": true
+    "id": "croptopia:macaron"
+  }
 }

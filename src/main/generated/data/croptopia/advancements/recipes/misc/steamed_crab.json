@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:crab"
-            ]
+            "items": "croptopia:crab"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:steamed_crab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

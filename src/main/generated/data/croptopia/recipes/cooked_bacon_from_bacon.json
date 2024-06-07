@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "croptopia:bacon"
   },
-  "result": "croptopia:cooked_bacon"
+  "result": {
+    "id": "croptopia:cooked_bacon"
+  }
 }

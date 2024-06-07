@@ -43,7 +43,7 @@ public record FoodConstructor(int hunger, float satMod) {
 
 
     public static FoodProperties.Builder createBuilder(FoodConstructor reg) {
-        return new FoodProperties.Builder().nutrition(reg.hunger).saturationMod(reg.satMod);
+        return new FoodProperties.Builder().nutrition(reg.hunger).saturationModifier(reg.satMod);
     }
 
     public static FoodProperties createFood(FoodConstructor reg) {

@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "croptopia:cauliflower_seed",
     "#${dependent}:seeds/cauliflower"

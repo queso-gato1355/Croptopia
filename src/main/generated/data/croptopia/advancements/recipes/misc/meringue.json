@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:egg"
-            ]
+            "items": "minecraft:egg"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:meringue"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

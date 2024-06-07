@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:sunflower"
-            ]
+            "items": "minecraft:sunflower"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:roasted_sunflower_seeds"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

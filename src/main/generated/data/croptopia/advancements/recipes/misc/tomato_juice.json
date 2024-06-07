@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "${dependent}:tomatoes"
+            "items": "#${dependent}:tomatoes"
           }
         ]
       },
@@ -28,6 +28,5 @@
     "recipes": [
       "croptopia:tomato_juice"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

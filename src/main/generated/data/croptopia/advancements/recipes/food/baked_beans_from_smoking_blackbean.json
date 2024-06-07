@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:blackbean"
-            ]
+            "items": "croptopia:blackbean"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "minecraft:baked_beans_from_smoking_blackbean"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

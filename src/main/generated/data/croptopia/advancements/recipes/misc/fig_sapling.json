@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "croptopia:fig"
-            ]
+            "items": "croptopia:fig"
           }
         ]
       },
@@ -30,6 +28,5 @@
     "recipes": [
       "croptopia:fig_sapling"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
