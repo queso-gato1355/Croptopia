@@ -630,7 +630,7 @@ public class CroptopiaRecipeProvider extends FabricRecipeProvider {
     }
 
     private TagKey<Item> croptopia(String name) {
-        return TagKey.create(Registries.ITEM, new ResourceLocation(MiscNames.MOD_ID, name));
+        return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MiscNames.MOD_ID, name));
     }
 
     public static TagKey<Item> independentTag(String name) {

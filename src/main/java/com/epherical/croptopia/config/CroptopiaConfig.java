@@ -269,10 +269,10 @@ public class CroptopiaConfig extends CommonConfig {
     }
 
     private static ResourceLocation travID(String name) {
-        return new ResourceLocation("traverse", name);
+        return ResourceLocation.fromNamespaceAndPath("traverse", name);
     }
 
     private static ResourceLocation bygID(String name) {
-        return new ResourceLocation("byg", name);
+        return ResourceLocation.fromNamespaceAndPath("byg", name);
     }
 }

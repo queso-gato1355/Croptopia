@@ -61,7 +61,7 @@ public class Croptopia implements ModInitializer {
     public void onInitialize() {
         mod = new CroptopiaMod(new FabricAdapter(), new CroptopiaConfig(HoconConfigurationLoader.builder(), "croptopia_v3.conf"));
 
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "croptopia"), CROPTOPIA_ITEM_GROUP);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "croptopia"), CROPTOPIA_ITEM_GROUP);
 
 
 
@@ -121,7 +121,7 @@ public class Croptopia implements ModInitializer {
     }
 
     public static ResourceLocation createIdentifier(String name) {
-        return new ResourceLocation(MOD_ID, name);
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
     }
 
     private void modifyAxeBlockStripping() {

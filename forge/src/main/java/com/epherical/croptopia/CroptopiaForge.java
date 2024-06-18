@@ -213,7 +213,7 @@ public class CroptopiaForge {
                                         .sorted(Comparator.comparing(entry -> BuiltInRegistries.ITEM.getId(entry.getValue())))
                                         .forEach(entry -> output.accept(entry.getValue())))
                         .icon(() -> new ItemStack(Content.COFFEE)).build();
-                Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, new ResourceLocation(MOD_ID, "croptopia"), CROPTOPIA_ITEM_GROUP);
+                Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(MOD_ID, "croptopia"), CROPTOPIA_ITEM_GROUP);
                 Content.GUIDE = new GuideBookItem(createGroup());
                 event.register(ForgeRegistries.Keys.ITEMS, createIdentifier(ItemNamesV2.GUIDE), () -> Content.GUIDE);
 
@@ -250,7 +250,7 @@ public class CroptopiaForge {
     }
 
     public static ResourceLocation createIdentifier(String name) {
-        return new ResourceLocation(MiscNames.MOD_ID, name);
+        return ResourceLocation.fromNamespaceAndPath(MiscNames.MOD_ID, name);
     }
 
     private static void modifyVillagerFoodItems() {

@@ -72,13 +72,13 @@ public final class IdentifierSerializer implements TypeSerializer<ResourceLocati
             if (val == null) {
                 throw listAcceptedFormats();
             }
-            return new ResourceLocation(val);
+            return ResourceLocation.parse(val);
         }
     }
 
     static ResourceLocation createIdentifier(final String key, final String value) throws SerializationException {
         try {
-            return new ResourceLocation(key, value);
+            return ResourceLocation.fromNamespaceAndPath(key, value);
         } catch (final ResourceLocationException ex) {
             throw new SerializationException(ex);
         }
@@ -86,7 +86,7 @@ public final class IdentifierSerializer implements TypeSerializer<ResourceLocati
 
     static ResourceLocation createIdentifier(final String data) throws SerializationException {
         try {
-            return new ResourceLocation(data);
+            return ResourceLocation.parse(data);
         } catch (final ResourceLocationException ex) {
             throw new SerializationException(ex.getMessage());
         }

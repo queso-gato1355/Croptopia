@@ -55,7 +55,7 @@ public record CroptopiaMod(PlatformAdapter<?> platform, CroptopiaConfig config) 
     }
 
     public static ResourceLocation createIdentifier(String name) {
-        return new ResourceLocation(MiscNames.MOD_ID, name);
+        return ResourceLocation.fromNamespaceAndPath(MiscNames.MOD_ID, name);
     }
 
     public static BlockBehaviour.Properties createCropSettings() {

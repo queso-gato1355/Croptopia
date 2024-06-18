@@ -44,7 +44,7 @@ public class CropLootTableModifier {
                             LOGGER.warn("Can not inject into gameplay/fishing/fish as it is empty");
                         } else {
                             LootPool.Builder builder = FabricLootPoolBuilder.copyOf(pools.get(0));
-                            ResourceKey<LootTable> croptopia = ResourceKey.create(Registries.LOOT_TABLE, new ResourceLocation("croptopia", "gameplay/fishing/fish"));
+                            ResourceKey<LootTable> croptopia = ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath("croptopia", "gameplay/fishing/fish"));
                             builder.add(NestedLootTable.lootTableReference(croptopia)
                                     .setWeight(30));
                             pools1.add(builder.build());

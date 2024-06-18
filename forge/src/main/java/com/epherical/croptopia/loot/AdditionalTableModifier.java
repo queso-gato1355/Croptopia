@@ -41,7 +41,7 @@ public class AdditionalTableModifier extends LootModifier {
         super(conditionsIn);
         this.referChance = chanceToRefer;
         this.tableID = tableID;
-        this.reference = (LootTableReference) LootTableReference.lootTableReference(new ResourceLocation(tableID)).build();
+        this.reference = (LootTableReference) LootTableReference.lootTableReference(ResourceLocation.fromNamespaceAndPath(tableID)).build();
     }
 
     @Override

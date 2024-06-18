@@ -1,6 +1,7 @@
 package com.epherical.croptopia.util;
 
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Items;
 
 public record FoodConstructor(int hunger, float satMod) {
     public static final FoodConstructor RAW_CROP_1 = new FoodConstructor(1, 0.1F);
@@ -48,5 +49,9 @@ public record FoodConstructor(int hunger, float satMod) {
 
     public static FoodProperties createFood(FoodConstructor reg) {
         return createBuilder(reg).build();
+    }
+
+    public static FoodProperties createFoodBowl(FoodConstructor reg) {
+        return createBuilder(reg).usingConvertsTo(Items.BOWL).build();
     }
 }

@@ -52,12 +52,12 @@ public class CroptopiaCropBlock extends CropBlock {
 
     @Override // JANK
     public boolean canSurvive(BlockState state, LevelReader world, BlockPos pos) {
-        if (world.getChunk(pos).getStatus().getIndex() < ChunkStatus.FULL.getIndex()) {
+        if (world.getChunk(pos).getHighestGeneratedStatus().getIndex() < ChunkStatus.FULL.getIndex()) {
             // ON WORLD GENERATION
             if (seed.getCategory() != null && world.getBiome(pos).is(seed.getCategory())) {
                 return super.canSurvive(state, world, pos);
             }
-        } else if (world.getChunk(pos).getStatus().getIndex() == ChunkStatus.FULL.getIndex()) {
+        } else if (world.getChunk(pos).getHighestGeneratedStatus().getIndex() == ChunkStatus.FULL.getIndex()) {
             // ON PLAYER PLACEMENT
             return super.canSurvive(state, world, pos);
         }
